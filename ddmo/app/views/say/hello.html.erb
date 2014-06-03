@@ -1,0 +1,24 @@
+<h1>Say#hello</h1>
+<p>Find me in app/views/say/hello.html.erb</p>
+<h1>zhangwei is a good boy</h1>
+<p>
+	it is now <%= DateTime.parse(Time.now.to_s).strftime('%Y-%m-%d %H:%M:%S').to_s %>
+</p>
+<p>
+	it is now <%= @DateTime %>
+</p>
+<p>
+	<%= 1+2 %>
+	<%= 1.hour.from_now %>
+	<div>
+	<%= @file = Dir.glob('*') %>
+	<% for file in @file %>
+	<div><%= file %></div>
+	<% end %>
+	</div>
+</p>
+
+<p>
+	<%= link_to "goodbye1" , say_goodbye_path %>!
+</p>
+<!-- <p>go to goodbye <a href="/say/goodbye">bye</a></p> -->
